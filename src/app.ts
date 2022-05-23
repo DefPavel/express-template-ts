@@ -1,4 +1,4 @@
-import express, { Express } from 'express';
+import express, { Application } from 'express';
 import dotenv from 'dotenv';
 /**
  * Controllers Import
@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 import * as homeController from "./controllers/home";
 
 dotenv.config();
-const app: Express = express();
+const app: Application = express();
 const port = process.env.PORT || 8080;
 
 /**
